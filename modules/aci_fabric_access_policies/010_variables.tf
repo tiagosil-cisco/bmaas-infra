@@ -160,46 +160,17 @@ variable "vlan_pools" {
 }
 variable "vlan_ranges" {
   default = {
-    1 = {
-      vlan_pool  = "BRATTICE-FI-UCSX"
-      start      = "1500"
-      end        = "1500"
-      allocation = "dynamic"
-    },
-    2 = {
-      vlan_pool  = "BRATTICE-FI-UCSX"
-      start      = "1501"
-      end        = "1501"
-      allocation = "dynamic"
-    },
-    3 = {
-      vlan_pool  = "BRATTICE-FI-UCSX"
-      start      = "1521"
-      end        = "1521"
-      allocation = "dynamic"
-    },
-    4 = {
-      vlan_pool  = "BRATTICE-FI-UCSX"
-      start      = "1525"
-      end        = "1525"
-      allocation = "dynamic"
-    },
-    5 = {
-      vlan_pool  = "BRATTICE-FI-UCSX"
-      start      = "1526"
-      end        = "1526"
-      allocation = "dynamic"
-    }
+
     6 = {
       vlan_pool  = "BRATTICE-FI-UCSX"
       start      = "1551"
-      end        = "1599"
+      end        = "1598"
       allocation = "dynamic"
     },
     7 = {
       vlan_pool  = "BRATTICE-VMM-DOMAIN"
       start      = "1550"
-      end        = "1599"
+      end        = "1598"
       allocation = "dynamic"
     }
   }
