@@ -149,7 +149,7 @@ variable "vlan_pools" {
   default = {
     BRATTICE-FI-UCSX = {
       desc       = "pool for UCS-X used in BRATTICE"
-      allocation = "dynamic"
+      allocation = "static"
     },
     BRATTICE-VMM-DOMAIN = {
       desc       = "pool for VMM used in BRATTICE"
@@ -209,7 +209,8 @@ variable "vlan_ranges" {
 variable "domains" {
   default = {
     BRATTICE-FI-PHYSICAL = {
-      type = "phys"
+      type      = "phys"
+      vlan_pool = "BRATTICE-FI-UCSX"
     }
   }
 }
